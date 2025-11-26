@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    default_transform: keymap_transform0 {
+    default_transform: default_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <4>;
@@ -20,7 +20,7 @@
     };
 };
 / {
-    default_layout: default_layout {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
@@ -39,7 +39,7 @@
 };
 / {
     chosen {
-        zmk,physical-layout = &default_layout;
+        zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
 };
