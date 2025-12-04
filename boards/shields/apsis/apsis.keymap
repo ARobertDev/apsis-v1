@@ -29,7 +29,7 @@
             // |     ~     |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|    SPC    |    ALT    |     }     |     +     |    OPT    |    FUN    |
             bindings = <
                 &kp ESC      &kp EXCL        &kp AT      &kp HASH    &kp DOLLAR   &kp PERCENT		&kp CARET    &kp AMPS    &kp STAR     &kp LPAR    &kp RPAR     &kp BSPC
-                &kp LCTRL    &kp 1    	     &kp 2       &kp 3       &kp 4        &kp 5			&kp 6  	     &kp 7       &kp 8        &kp 9       &kp 0        &kp RET
+                &kp LCTRL    &kp N1    	     &kp N2      &kp N3      &kp N4       &kp N5		&kp N6       &kp N7      &kp N8       &kp N9      &kp N0       &kp RET
                 &kp LSHFT    &kp Z   	     &kp X       &kp C       &kp V        &kp B			&kp N        &kp M       &kp COMMA    &kp DOT     &kp QMARK    &kp RSHFT
                 &kp TILDE    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp SPACE    &kp RALT    &kp RBKT     &kp PLUS    &trans       &trans
             >;
@@ -42,9 +42,9 @@
             // |     ~     |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|     1     |     2     |     3     |     0     |    OPT    |    FUN    |
             bindings = <
                 &kp ESC      &kp Q  	     &kp W    	 &kp E       &kp R        &kp T			&kp PIPE    &kp SLASH    &kp STAR    &kp MINUS    &kp P        &kp BSPC
-                &kp LCTRL    &kp A  	     &kp S    	 &kp D       &kp F        &kp G			&kp 7       &kp 8        &kp 9       &kp PLUS     &kp DQT      &kp RET
-                &kp LSHFT    &kp Z   	     &kp X    	 &kp C       &kp V        &kp B			&kp 4       &kp 5        &kp 6       &kp EQUAL    &kp QMARK    &kp RSHFT
-                &kp TILDE    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp 1       &kp 2        &kp 3       &kp 0    	  &trans       &trans
+                &kp LCTRL    &kp A  	     &kp S    	 &kp D       &kp F        &kp G			&kp N7      &kp N8       &kp N9      &kp PLUS     &kp DQT      &kp RET
+                &kp LSHFT    &kp Z   	     &kp X    	 &kp C       &kp V        &kp B			&kp N4      &kp N5       &kp N6      &kp EQUAL    &kp QMARK    &kp RSHFT
+                &kp TILDE    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp N1      &kp N2       &kp N3      &kp 0    	  &trans       &trans
             >;
         };
     };
