@@ -3,6 +3,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
@@ -36,12 +37,12 @@
         };
         raise_layer { // Layer 2
             // -------------------------------------------------------------------------		-------------------------------------------------------------------------
-            // |    ESC    |     Q     |     W     |     E     |     R     |     T     |		|     |     |     /     |     *     |     -     |     P     |    BCK    |
+            // |  BT  CLR  |  BT  PRV  |  BT  NXT  |     E     |     R     |     T     |		|     |     |     /     |     *     |     -     |     P     |    BCK    |
             // |     ~     |     A     |     S     |     D     |     F     |     G     |		|     7     |     8     |     9     |     +     |     "     |    RET    |
             // |    SFT    |     Z     |     X     |     C     |     V     |     B     |		|     4     |     5     |     6     |     =     |     ?     |    SFT    |
             // |    CTL    |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|     1     |     2     |     3     |     0     |    OPT    |    FUN    |
             bindings = <
-                &kp ESC      &kp Q  	     &kp W    	 &kp E       &kp R        &kp T			&kp PIPE    &kp SLASH    &kp STAR    &kp MINUS    &kp P        &kp BSPC
+                &bt BT_CLR   &bt BT_PRV  	 &bt BT_NXT  &kp E       &kp R        &kp T			&kp PIPE    &kp SLASH    &kp STAR    &kp MINUS    &kp P        &kp BSPC
                 &kp TILDE    &kp A  	     &kp S    	 &kp D       &kp F        &kp G			&kp N7      &kp N8       &kp N9      &kp PLUS     &kp DQT      &kp RET
                 &kp LSHFT    &kp Z   	     &kp X    	 &kp C       &kp V        &kp B			&kp N4      &kp N5       &kp N6      &kp EQUAL    &kp QMARK    &kp RSHFT
                 &kp LCTRL    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp N1      &kp N2       &kp N3      &kp N0    	  &trans       &trans
