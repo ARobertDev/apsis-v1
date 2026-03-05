@@ -42,7 +42,7 @@
             // |    SFT    |     Z     |     X     |     C     |     V     |     B     |		|     4     |     5     |     6     |     =     |     ?     |    SFT    |
             // |    CTL    |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|     1     |     2     |     3     |     0     |    OPT    |    FUN    |
             bindings = <
-                &bt BT_CLR   &bt BT_PRV  	 &bt BT_NXT  &kp E       &kp R        &kp T			&kp PIPE    &kp SLASH    &kp STAR    &kp MINUS    &kp P        &kp BSPC
+                &bt BT_CLR   &bt BT_0  	     &bt BT_1    &bt BT_2    &bt BT_3  &bt BT_4			&kp PIPE    &kp SLASH    &kp STAR    &kp MINUS    &kp P        &kp BSPC
                 &kp TILDE    &kp A  	     &kp S    	 &kp D       &kp F        &kp G			&kp N7      &kp N8       &kp N9      &kp PLUS     &kp DQT      &kp RET
                 &kp LSHFT    &kp Z   	     &kp X    	 &kp C       &kp V        &kp B			&kp N4      &kp N5       &kp N6      &kp EQUAL    &kp QMARK    &kp RSHFT
                 &kp LCTRL    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp N1      &kp N2       &kp N3      &kp N0    	  &trans       &trans
