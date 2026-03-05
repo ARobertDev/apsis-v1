@@ -10,43 +10,45 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            // -------------------------------------------------------------------------		-------------------------------------------------------------------------
-            // |    ESC    |     Q     |     W     |     E     |     R     |     T     |		|     Y     |     U     |     I     |     O     |     P     |    BCK    |
-            // |    TAB    |     A     |     S     |     D     |     F     |     G     |		|     H     |     J     |     K     |     L     |     "     |    RET    |
-            // |    SFT    |     Z     |     X     |     C     |     V     |     B     |		|     N     |     M     |     ,     |     .     |     ?     |    SFT    |
-            // |    CTL    |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|    SPC    |    ALT    |     }     |     +     |    OPT    |    RSE    |
+            // -------------------------------------------------------------------------------------------------------------
+            // |   ESC   |    Q    |    W    |    E    |    R    |    T    |   |    Y    |    U    |    I    |    O    |    P    |   BSPC  |
+            // |   TAB   |    A    |    S    |    D    |    F    |    G    |   |    H    |    J    |    K    |    L    |    "    |   RET   |
+            // |  LSHFT  |    Z    |    X    |    C    |    V    |    B    |   |    N    |    M    |    ,    |    .    |    ?    |  RSHFT  |
+            // |  LCTRL  |  LGUI   |    ;    |    {    |  LALT   |   SPC   |   |   SPC   |  RALT   |    }    |    +    |  LYR 2  |  LYR 1  |
             bindings = <
-                &kp ESC      &kp Q    	     &kp W   	 &kp E       &kp R       &kp T			&kp Y        &kp U       &kp I        &kp O       &kp P        &kp BSPC
-                &kp TAB      &kp A    	     &kp S   	 &kp D       &kp F       &kp G			&kp H        &kp J       &kp K        &kp L       &kp DQT      &kp RET
-                &kp LSHFT    &kp Z    	     &kp X    	 &kp C       &kp V       &kp B			&kp N        &kp M       &kp COMMA    &kp DOT     &kp QMARK    &kp RSHFT
-                &kp LCTRL    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT    &kp SPACE		&kp SPACE    &kp RALT    &kp RBKT     &kp PLUS    &mo 2        &mo 1
+                &kp ESC      &kp Q        &kp W        &kp E        &kp R        &kp T              &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSPC
+                &kp TAB      &kp A        &kp S        &kp D        &kp F        &kp G              &kp H        &kp J        &kp K        &kp L        &kp DQT      &kp RET
+                &kp LSHFT    &kp Z        &kp X        &kp C        &kp V        &kp B              &kp N        &kp M        &kp COMMA    &kp DOT      &kp QMARK    &kp RSHFT
+                &kp LCTRL    &kp LEFT_GUI &kp SEMI     &kp LBKT     &kp LALT     &kp SPACE          &kp SPACE    &kp RALT     &kp RBKT     &kp PLUS     &mo 2        &mo 1
             >;
         };
+
         lower_layer { // Layer 1
-            // -------------------------------------------------------------------------                -------------------------------------------------------------------------
-            // |    ESC    |     !     |     @     |     #     |     $     |     %     |		|     ^     |     &     |     *     |     (     |     )     |    BCK    |
-            // |     ~     |     1     |     2     |     3     |     4     |     5     |		|     6     |     7     |     8     |     9     |     0     |    RET    |
-            // |    SFT    |     Z     |     X     |     C     |     V     |     B     |		|     N     |     M     |     /\    |     .     |     ?     |    SFT    |
-            // |    CTL    |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|    SPC    |    <-     |     \/    |     ->    |    OPT    |    FUN    |
+            // -------------------------------------------------------------------------------------------------------------
+            // |   ESC   |    !    |    @    |    #    |    $    |    %    |   |    ^    |    &    |    * |    (    |    )    |   BSPC  |
+            // |    ~    |    1    |    2    |    3    |    4    |    5    |   |    6    |    7    |    8    |    9    |    0    |   RET   |
+            // |  LSHFT  |    Z    |    X    |    C    |    V    | PWR OFF |   | PWR OFF |    M    |   UP    |    .    |    ?    |  RSHFT  |
+            // |  LCTRL  |  LGUI   |    ;    |    {    |  LALT   |   SPC   |   |   SPC   |  LEFT   |  DOWN   |  RIGHT  |  TRANS  |  TRANS  |
             bindings = <
-                &kp ESC      &kp EXCL        &kp AT      &kp HASH    &kp DOLLAR   &kp PERCENT	&kp CARET    &kp AMPS    &kp STAR     &kp LPAR    &kp RPAR     &kp BSPC
-                &kp TILDE    &kp N1    	     &kp N2      &kp N3      &kp N4       &kp N5		&kp N6       &kp N7      &kp N8       &kp N9      &kp N0       &kp RET
-                &kp LSHFT    &kp Z   	     &kp X       &kp C       &kp V        &soft_off		&soft_off        &kp M       &kp UP       &kp DOT     &kp QMARK    &kp RSHFT
-                &kp LCTRL    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp SPACE    &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &trans
+                &kp ESC      &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT        &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &kp BSPC
+                &kp TILDE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0       &kp RET
+                &kp LSHFT    &kp Z        &kp X        &kp C        &kp V        &soft_off          &soft_off    &kp M        &kp UP       &kp DOT      &kp QMARK    &kp RSHFT
+                &kp LCTRL    &kp LEFT_GUI &kp SEMI     &kp LBKT     &kp LALT     &kp SPACE          &kp SPACE    &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans
             >;
         };
+
         raise_layer { // Layer 2
-            // -------------------------------------------------------------------------		-------------------------------------------------------------------------
-            // |  BT  CLR  |  BT  PRV  |  BT  NXT  |     E     |     R     |     T     |		|     |     |     /     |     *     |     -     |     P     |    BCK    |
-            // |     ~     |     A     |     S     |     D     |     F     |     G     |		|     7     |     8     |     9     |     +     |     "     |    RET    |
-            // |    SFT    |     Z     |     X     |     C     |     V     |     B     |		|     4     |     5     |     6     |     =     |     ?     |    SFT    |
-            // |    CTL    |    WIN    |     ;     |     {     |    ALT    |    SPC    |		|     1     |     2     |     3     |     0     |    OPT    |    FUN    |
+            // -------------------------------------------------------------------------------------------------------------
+            // | BT CLR  |  BT 0   |  BT 1   |  BT 2   |  BT 3   |  BT 4   |   |    |    |    /    |    * |    -    |    P    |   BSPC  |
+            // |    ~    |    A    |    S    |    D    |    F    |    G    |   |    7    |    8    |    9    |    +    |    "    |   RET   |
+            // |  LSHFT  |    Z    |    X    |    C    |    V    |    B    |   |    4    |    5    |    6    |    =    |    ?    |  RSHFT  |
+            // |  LCTRL  |  LGUI   |    ;    |    {    |  LALT   |   SPC   |   |    1    |    2    |    3    |    0    |  TRANS  |  TRANS  |
             bindings = <
-                &bt BT_CLR   &bt BT_0  	     &bt BT_1    &bt BT_2    &bt BT_3  &bt BT_4			&kp PIPE    &kp SLASH    &kp STAR    &kp MINUS    &kp P        &kp BSPC
-                &kp TILDE    &kp A  	     &kp S    	 &kp D       &kp F        &kp G			&kp N7      &kp N8       &kp N9      &kp PLUS     &kp DQT      &kp RET
-                &kp LSHFT    &kp Z   	     &kp X    	 &kp C       &kp V        &kp B			&kp N4      &kp N5       &kp N6      &kp EQUAL    &kp QMARK    &kp RSHFT
-                &kp LCTRL    &kp LEFT_GUI    &kp SEMI    &kp LBKT    &kp LALT     &kp SPACE		&kp N1      &kp N2       &kp N3      &kp N0    	  &trans       &trans
+                &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &kp PIPE     &kp SLASH    &kp STAR     &kp MINUS    &kp P        &kp BSPC
+                &kp TILDE    &kp A        &kp S        &kp D        &kp F        &kp G              &kp N7       &kp N8       &kp N9       &kp PLUS     &kp DQT      &kp RET
+                &kp LSHFT    &kp Z        &kp X        &kp C        &kp V        &kp B              &kp N4       &kp N5       &kp N6       &kp EQUAL    &kp QMARK    &kp RSHFT
+                &kp LCTRL    &kp LEFT_GUI &kp SEMI     &kp LBKT     &kp LALT     &kp SPACE          &kp N1       &kp N2       &kp N3       &kp N0       &trans       &trans
             >;
         };
     };
- };
+};
