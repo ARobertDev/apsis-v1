@@ -13,6 +13,7 @@
     apsis_layout: apsis_layout {
         compatible = "zmk,physical-layout";
         display-name = "Apsis Standard";
+        transform = <&default_transform>;
         
         keys
             // Row 0
